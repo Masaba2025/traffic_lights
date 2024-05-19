@@ -1,0 +1,20 @@
+from machine import Pin
+from time import sleep
+red=Pin(6,Pin.OUT)
+yellow=Pin(7,Pin.OUT)
+green=Pin(8,Pin.OUT)
+while True:
+   red.on()
+   sleep(2)
+   yellow.on()
+   sleep(.5)
+   red.off()
+   sleep(.4)
+   yellow.off()
+   green.on()
+   sleep(2)
+   yellow.on()
+   sleep(.5)
+   green.off()
+   sleep(.5)
+   yellow.off()
